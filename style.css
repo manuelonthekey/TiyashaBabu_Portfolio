@@ -827,6 +827,8 @@
   height: 85vh;
   padding: 0;
   border-bottom: 1px solid var(--ln);
+  /* Lighter tone at the top blending into the website's background color at the bottom */
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 30%, white) 0%, var(--bg) 100%);
 }
 
 .hero-bg-text {
@@ -849,14 +851,36 @@
 
 .hero-signature {
   position: absolute;
-  top: 25%;
-  left: 15%;
+  top: 20%;
+  left: 10%;
   font-family: 'Dancing Script', 'Caveat', cursive;
   font-size: clamp(60px, 8vw, 130px);
   font-weight: 700;
   color: var(--tx);
   transform: rotate(-4deg);
   z-index: 4;
+}
+
+.hero-buttons {
+  position: absolute;
+  left: 12%;
+  top: 55%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 5;
+}
+
+.hero-buttons .btn {
+  text-align: center;
+  min-width: 200px;
+  background: color-mix(in srgb, var(--bg) 80%, transparent);
+  backdrop-filter: blur(4px);
+}
+
+.hero-buttons .btn.p {
+  background: var(--ac);
 }
 
 .hero-portrait {
@@ -925,9 +949,13 @@
 
 @media (max-width: 900px) {
   .hero-signature {
-    top: 20%;
+    top: 15%;
     left: 5%;
     font-size: clamp(50px, 10vw, 90px);
+  }
+  .hero-buttons {
+    left: 5%;
+    top: 45%;
   }
   .hero-portrait {
     height: 65vh;
@@ -941,11 +969,23 @@
   }
 }
 @media (max-width: 560px) {
+  .hero-signature {
+    top: 10%;
+  }
+  .hero-buttons {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+    width: 90%;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+  }
   .hero-portrait {
     height: 55vh;
     right: -10%;
   }
   .hero-bg-text {
-    font-size: 18vw; /* Make background text fit a bit tighter on mobile */
+    font-size: 18vw;
   }
 }

@@ -640,9 +640,16 @@ const $ = (s, r = document) => r.querySelector(s),
         () => `<section class="hero new-hero">
   <div class="hero-signature">Tiyasha Babu</div>
   <div class="hero-bg-text">PORTFOLIO</div>
+  
+  <div class="hero-buttons">
+    <a class="btn p" href="#/work">VIEW MY WORK</a>
+    <a class="btn" href="#/contact">LET'S CONNECT</a>
+  </div>
+
   <div class="hero-portrait">
     <img src="portrait.png" alt="Tiyasha Babu" />
   </div>
+  
   <div class="hero-footer">
     <p>Authentic story telling that connects brands with audiences through relatable experiences</p>
     <div class="social-icons">
