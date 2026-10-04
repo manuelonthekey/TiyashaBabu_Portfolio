@@ -741,7 +741,7 @@ ${SPEC.map((x, i) => `<a class="card rv" href="#/experiments/${x.s}" style="bord
         return `<div class="wrap"><div class="crumb"><a href="#/experiments">EXPERIMENTS</a> → ${x.n.toUpperCase()}</div><section style="padding-top:40px"><span class="bd">${x.tag}</span><h1 class="h2" style="margin:20px 0;font-size:clamp(44px,8vw,110px)">${x.n.toUpperCase()}</h1><div class="note">${x.no}</div><p class="mu">${x.d}</p>${x.rows.map((r, k) => `<div class="cs rv"><div class="big">0${k + 1}</div><div><h3>${r[0]}</h3><p>${r[1]}</p></div></div>`).join("")}<a class="nx" href="#/experiments/${SPEC.find((y) => y != x).s}"><small class="mu">NEXT CONCEPT →</small><b>${SPEC.find((y) => y != x).n.toUpperCase()}</b></a></section></div>`;
       };
       V.resume =
-        () => `<section><div class="wrap" style="max-width:820px"><span class="lab">Resume</span><h1 class="h2">RESUME</h1><a class="btn p" href="#">DOWNLOAD CV →</a><p class="mu" style="margin-top:6px;font-size:13px">[INSERT CV FILE LINK]</p>
+        () => `<section><div class="wrap" style="max-width:820px"><span class="lab">Resume</span><h1 class="h2">RESUME</h1><a class="btn p" href="Tiyasha_Babu_CV.pdf" target="_blank" download="Tiyasha_Babu_CV.pdf">DOWNLOAD CV →</a>
 ${[
   [
     "Education",
@@ -763,7 +763,7 @@ ${[
   )
   .join("")}</div></section>`;
       V.contact =
-        () => `<section><div class="wrap"><span class="lab">Contact</span><h1 class="h2" style="font-size:clamp(52px,11vw,160px)">LET’S TALK.</h1><div class="cols"><div><p><a href="mailto:hello@example.com" style="border-bottom:1px solid var(--ac)">Email [INSERT EMAIL]</a></p><p>LinkedIn [INSERT LINK]</p><p>Instagram [INSERT LINK]</p><a class="btn p" href="mailto:hello@example.com">GET IN TOUCH ↗</a><span class="lab" style="margin-top:44px">Currently open to</span>${words(OPEN)}</div>
+        () => `<section><div class="wrap"><span class="lab">Contact</span><h1 class="h2" style="font-size:clamp(52px,11vw,160px)">LET’S TALK.</h1><div class="cols"><div><p><a href="mailto:tiyashababu.works@gmail.com" style="border-bottom:1px solid var(--ac)">Email</a></p><p><a href="https://www.linkedin.com/in/tiyasha-babu-37305b363/" target="_blank" style="border-bottom:1px solid var(--ac)">LinkedIn</a></p><p><a href="https://www.instagram.com/aeinn_05?stkn=MXg5cnhjOHlzb3ZkZQ==" target="_blank" style="border-bottom:1px solid var(--ac)">Instagram</a></p><a class="btn p" href="mailto:tiyashababu.works@gmail.com">GET IN TOUCH ↗</a><span class="lab" style="margin-top:44px">Currently open to</span>${words(OPEN)}</div>
 <form onsubmit="event.preventDefault();this.querySelector('output').textContent='Sample form: connect it to an email service to send messages.'"><span class="mu" style="font-size:13px">Optional: or just email directly.</span><label>Name<input name="n" style="width:100%"></label><label>Email<input type="email" name="e" style="width:100%"></label><label>Message<textarea rows="4" style="width:100%"></textarea></label><button class="btn" style="justify-self:start">SEND</button><output class="mu" style="font-size:13px"></output></form></div></div></section>`;
       V.nf = () =>
         `<section><div class="wrap err"><h1 class="h2" style="font-size:clamp(40px,8vw,110px)">WELL, THAT WASN’T THE PAGE I WAS LOOKING FOR EITHER.</h1><p class="serif" style="font-size:28px;color:var(--ac)">Let’s get you somewhere useful.</p><a class="btn p" href="#/">BACK TO HOME →</a></div></section>`;
