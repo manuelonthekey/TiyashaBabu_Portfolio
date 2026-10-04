@@ -638,6 +638,7 @@ const $ = (s, r = document) => r.querySelector(s),
       const V = {};
       V.home =
         () => `<section class="hero new-hero">
+  <div class="hero-signature">Tiyasha Babu</div>
   <div class="hero-bg-text">PORTFOLIO</div>
   <div class="hero-portrait">
     <img src="portrait.png" alt="Tiyasha Babu" />
