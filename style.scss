@@ -731,10 +731,27 @@
         border-radius: 0;
       }
       @media (max-width: 900px) {
-        .nav nav,
-        .nav .cv {
-          display: none;
-        }
+  .hero-signature {
+    top: 10%;
+    left: 5%;
+    font-size: clamp(35px, 7vw, 60px);
+  }
+  .hero-buttons {
+    right: 50%;
+    transform: translateX(50%); /* Center them horizontally on smaller screens */
+    bottom: 35%;
+  }
+  .hero-portrait {
+    height: 65vh;
+  }
+  .hero-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    bottom: 20px;
+  }
+}
         .mb {
           display: block;
         }
@@ -770,9 +787,27 @@
         }
       }
       @media (max-width: 560px) {
-        .think {
-          grid-template-columns: 1fr;
-        }
+  .hero-signature {
+    top: 8%;
+  }
+  .hero-buttons {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 20%;
+    flex-direction: column; /* Stack on very small screens */
+    width: 90%;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+  }
+  .hero-portrait {
+    height: 55vh;
+    right: -10%;
+  }
+  .hero-bg-text {
+    font-size: 18vw;
+  }
+}
         .tc {
           min-height: 220px;
         }
@@ -834,7 +869,6 @@
   height: 85vh;
   padding: 0;
   border-bottom: 1px solid var(--ln);
-  /* Lighter tone at the top blending into the website's background color at the bottom */
   background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 30%, white) 0%, var(--bg) 100%);
 }
 
@@ -852,7 +886,6 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-  /* Text gradient for PORTFOLIO */
   background: linear-gradient(to bottom, var(--mu) 0%, var(--tx) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -861,33 +894,33 @@
 
 .hero-signature {
   position: absolute;
-  top: 20%;
+  top: 12%;
   left: 10%;
   font-family: 'Amsterdam', 'Dancing Script', 'Caveat', cursive;
-  font-size: clamp(70px, 10vw, 140px); /* Slightly larger */
+  font-size: clamp(40px, 6vw, 90px);
   font-weight: bold;
-  color: #111111; /* Solid dark color */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  color: #111111;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
   transform: rotate(-4deg);
   z-index: 4;
 }
 
 .hero-buttons {
   position: absolute;
-  left: 12%;
-  top: 55%;
-  transform: translateY(-50%);
+  right: 45%;
+  bottom: 25%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 15px;
   z-index: 5;
 }
 
 .hero-buttons .btn {
   text-align: center;
-  min-width: 200px;
+  padding: 12px 24px;
   background: color-mix(in srgb, var(--bg) 80%, transparent);
   backdrop-filter: blur(4px);
+  white-space: nowrap;
 }
 
 .hero-buttons .btn.p {
@@ -897,9 +930,9 @@
 .hero-portrait {
   position: absolute;
   right: 0;
-  bottom: -2%; /* Slightly drop it to allow zooming */
+  bottom: -2%;
   z-index: 2;
-  height: 92vh; /* Increased from 80vh to zoom the image */
+  height: 92vh;
   display: flex;
   align-items: flex-end;
 }
@@ -909,7 +942,6 @@
   width: auto;
   object-fit: cover;
   transform-origin: bottom right;
-  /* Optional: transform: scale(1.1); */
 }
 
 .hero-footer {
@@ -961,13 +993,14 @@
 
 @media (max-width: 900px) {
   .hero-signature {
-    top: 15%;
+    top: 10%;
     left: 5%;
-    font-size: clamp(50px, 10vw, 90px);
+    font-size: clamp(35px, 7vw, 60px);
   }
   .hero-buttons {
-    left: 5%;
-    top: 45%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 35%;
   }
   .hero-portrait {
     height: 65vh;
@@ -980,14 +1013,16 @@
     bottom: 20px;
   }
 }
+
 @media (max-width: 560px) {
   .hero-signature {
-    top: 10%;
+    top: 8%;
   }
   .hero-buttons {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 30%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 20%;
+    flex-direction: column;
     width: 90%;
   }
   .hero-buttons .btn {
