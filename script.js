@@ -637,8 +637,21 @@ const $ = (s, r = document) => r.querySelector(s),
       ];
       const V = {};
       V.home =
-        () => `<section class="hero"><div class="wrap"><span class="mu" style="font-size:12px;letter-spacing:.16em">TIYASHA BABU / 2026</span><h1>CONNECTING<br>IDEAS, PEOPLE<br><span style="color:var(--ac)">&amp; BRANDS.</span></h1>
-<div class="row"><p class="mu" style="font-size:19px">Final-year Media Science student specialising in Integrated Marketing Communication, exploring the space where creativity, content and strategy meet.</p><div class="btns"><a class="btn p" href="#/work">VIEW MY WORK →</a><a class="btn" href="#/contact">LET’S CONNECT ↗</a></div></div></div></section>
+        () => `<section class="hero new-hero">
+  <div class="hero-bg-text">PORTFOLIO</div>
+  <div class="hero-portrait">
+    <img src="portrait.png" alt="Tiyasha Babu" />
+  </div>
+  <div class="hero-footer">
+    <p>Authentic story telling that connects brands with audiences through relatable experiences</p>
+    <div class="social-icons">
+       <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+       <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+       <a href="#" aria-label="X"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg></a>
+       <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+    </div>
+  </div>
+</section>
 <div class="marq" aria-hidden="true"><div>${"MARKETING / SOCIAL MEDIA / CONTENT / BRAND COMMUNICATION / ".repeat(8)}</div></div>
 <section><div class="wrap cols"><div class="rv"><span class="lab">Introduction</span><h2 class="h2">A LITTLE ABOUT WHAT I DO.</h2></div><div class="rv"><p>I like the space where an idea becomes something people can see, understand and remember.</p><p>I’m currently pursuing my B.Sc. in Media Science, specialising in Integrated Marketing Communication. My experience so far has taken me across social media, content production, campaign communication and creative storytelling.</p><p>I’m now looking to grow within marketing, social media and brand communication, particularly in environments where I can contribute creatively while learning how strong brands are built.</p><span class="lab" style="margin-top:36px">Currently interested in</span>${words(INT)}<p class="tiny" style="margin-top:20px">Favourite part of the process: the moment an idea suddenly makes sense.</p></div></div></section>
 <section style="padding-top:0"><div class="wrap"><div class="rv"><span class="lab">Selected work</span><h2 class="h2">SELECTED WORK</h2><p class="mu">A mix of professional experience, brand work, social media and creative projects.</p></div>
