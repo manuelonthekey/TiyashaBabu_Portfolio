@@ -1,3 +1,10 @@
+
+@font-face {
+  font-family: 'Amsterdam';
+  src: url('Amsterdam.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
         --bg: #f7f3ed;
         --tx: #171717;
@@ -853,7 +860,7 @@
   position: absolute;
   top: 20%;
   left: 10%;
-  font-family: 'Dancing Script', 'Caveat', cursive;
+  font-family: 'Amsterdam', cursive;
   font-size: clamp(60px, 8vw, 130px);
   font-weight: 700;
   color: var(--tx);
