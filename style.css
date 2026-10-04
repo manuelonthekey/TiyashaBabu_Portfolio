@@ -960,7 +960,7 @@
 
 @media (max-width: 900px) {
   .hero-signature {
-    top: 8%;
+    top: 14%;
     left: 5%;
     font-size: 14vw;
   }
@@ -987,8 +987,9 @@
     bottom: 0;
   }
   .hero-bg-text {
+    top: 31%;
     font-size: 16vw;
-    z-index: 3;
+    z-index: 1;
   }
   .hero-footer {
     flex-direction: column;
@@ -1005,15 +1006,16 @@
     height: auto;
   }
   .hero-signature {
-    top: 8%;
+    top: 20%;
     font-size: 14vw;
   }
   .hero-bg-text {
+    top: 31%;
     font-size: 16vw;
-    z-index: 3;
+    z-index: 1;
   }
   .hero-portrait {
-    height: 75vh;
+    height: 60vh;
     left: 50%;
     transform: translateX(-50%);
     right: auto;
