@@ -960,26 +960,35 @@
 
 @media (max-width: 900px) {
   .hero-signature {
-    top: 10%;
+    top: 8%;
     left: 5%;
-    font-size: 7vw;
+    font-size: 14vw;
   }
   .hero-buttons {
     right: auto;
     left: 5%;
-    bottom: 25%;
-    flex-direction: column;
+    bottom: 120px;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
+    z-index: 6;
   }
   .hero-buttons .btn {
-    width: 220px;
+    width: auto;
+    flex: 0 0 auto;
+    padding: 10px 15px;
+    font-size: 13px;
   }
   .hero-portrait {
-    height: 60vh;
-    right: -10%;
+    height: 70vh;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 0;
   }
   .hero-bg-text {
-    font-size: 13vw;
+    font-size: 16vw;
+    z-index: 3;
   }
   .hero-footer {
     flex-direction: column;
@@ -997,27 +1006,27 @@
   }
   .hero-signature {
     top: 8%;
-    font-size: 18vw; /* Increased size significantly */
-    z-index: 4;
+    font-size: 14vw;
   }
   .hero-bg-text {
     font-size: 16vw;
-    z-index: 3; /* Placed directly on the portrait */
+    z-index: 3;
   }
   .hero-portrait {
-    height: 50vh;
-    right: auto;
+    height: 75vh;
     left: 50%;
-    transform: translateX(-50%); /* Centered */
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 0;
   }
   .hero-buttons {
-    bottom: 140px; /* Positioned directly above the footer text */
+    bottom: 135px;
     left: 5%;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 10px;
     width: auto;
-    z-index: 5;
+    z-index: 6;
   }
   .hero-buttons .btn {
     width: auto;
