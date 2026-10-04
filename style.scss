@@ -106,8 +106,8 @@
         position: sticky;
         top: env(safe-area-inset-top, 0px);
         z-index: 50;
-        background: color-mix(in srgb, var(--bg) 92%, transparent);
-        backdrop-filter: blur(8px);
+        background: color-mix(in srgb, var(--bg) 50%, transparent);
+        backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
         border-bottom: 1px solid var(--ln);
       }
       .nav .wrap {
@@ -283,19 +283,22 @@
         }
       }
       #cur {
-        position: fixed;
-        left: 0;
-        top: 0;
-        pointer-events: none;
-        z-index: 40;
-        font:
-          italic 400 14px "DM Serif Display",
-          serif;
-        color: var(--ac);
-        opacity: 0;
-        transition: opacity 0.3s;
-        white-space: nowrap;
-      }
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 40;
+  width: 600px;
+  height: 600px;
+  margin-left: -300px;
+  margin-top: -300px;
+  border-radius: 50%;
+  background: radial-gradient(circle closest-side, color-mix(in srgb, var(--ac) 15%, transparent), transparent);
+  color: transparent;
+  font-size: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
       .cols {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -960,7 +963,7 @@
 
 @media (max-width: 900px) {
   .hero-signature {
-    top: 8%;
+    top: 14%;
     left: 5%;
     font-size: 14vw;
   }
@@ -987,8 +990,9 @@
     bottom: 0;
   }
   .hero-bg-text {
+    top: 31%;
     font-size: 16vw;
-    z-index: 3;
+    z-index: 1;
   }
   .hero-footer {
     flex-direction: column;
@@ -1005,15 +1009,16 @@
     height: auto;
   }
   .hero-signature {
-    top: 8%;
+    top: 20%;
     font-size: 14vw;
   }
   .hero-bg-text {
+    top: 31%;
     font-size: 16vw;
-    z-index: 3;
+    z-index: 1;
   }
   .hero-portrait {
-    height: 75vh;
+    height: 60vh;
     left: 50%;
     transform: translateX(-50%);
     right: auto;
