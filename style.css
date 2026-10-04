@@ -847,13 +847,16 @@
   text-align: center;
   font-size: 14vw;
   font-weight: 900;
-  color: var(--mu);
-  opacity: 0.15;
   white-space: nowrap;
   z-index: 1;
   font-family: "Helvetica Neue", Arial, sans-serif;
   letter-spacing: -0.05em;
   text-transform: uppercase;
+  /* Text gradient for PORTFOLIO */
+  background: linear-gradient(to bottom, var(--mu) 0%, var(--tx) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.85;
 }
 
 .hero-signature {
@@ -864,6 +867,8 @@
   font-size: clamp(60px, 8vw, 130px);
   font-weight: normal;
   color: var(--tx);
+  -webkit-text-stroke: 1px var(--tx); /* Makes the font feel darker/heavier */
+  filter: contrast(1.5) brightness(0.8); /* Darkens the tone */
   transform: rotate(-4deg);
   z-index: 4;
 }
