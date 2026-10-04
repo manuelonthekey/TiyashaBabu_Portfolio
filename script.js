@@ -487,27 +487,27 @@ const $ = (s, r = document) => r.querySelector(s),
       const TH = [
         [
           "Creative Thinking",
-          "Concepts, campaign ideas, creative directions and the occasional thought that starts with “what if…?”"
+          "I enjoy starting with the blank page. From campaign concepts and social ideas to creative directions, I like exploring different ways to approach a brief before settling on the one that feels right."
         ],
         [
           "Content & Copy",
-          "Captions, scripts, brand stories and content that knows what it wants to say."
+          "Words are a big part of how an idea comes alive. I work with captions, scripts, brand stories and other forms of content, with a focus on making communication clear, engaging and true to its voice."
         ],
         [
           "Social Media",
-          "Content planning, platform thinking and ideas built for how people actually scroll, share and interact."
+          "I’m interested in more than simply creating posts. I like thinking about what a brand should say, how it should show up on different platforms, and what makes someone stop, look, interact or remember."
         ],
         [
           "Brand Communication",
-          "Finding the right voice, message and visual direction to make a brand feel like itself."
+          "I enjoy figuring out how a brand should sound, look and communicate. From tone of voice and messaging to visual direction and storytelling, I’m interested in creating communication that feels cohesive and recognisably its own."
         ],
         [
           "Media & Production",
-          "Video editing, shoots, graphics, audio, colour and content production — hands-on experience from idea to execution."
+          "My background in media has given me hands-on experience with video editing, shoots, graphics, audio, colour and content production. It means I’m comfortable taking an idea beyond the planning stage and getting involved in making it happen."
         ],
         [
           "Curiosity",
-          "Researching, experimenting, asking too many “why” questions and always looking for a better way to do things."
+          "Probably the thing I carry into everything. I like researching, observing people, questioning the obvious and exploring unfamiliar ideas. I’m always looking for the why behind something — and usually asking what could make it better."
         ]
       ];
       const thinkHTML = () => `<div class="think">${TH.map((t, i) => `<div class="tc"><div><div class="n">0${i + 1}</div><h3>${t[0]}</h3></div><p style="font-size:15px; margin:0">${t[1]}</p></div>`).join("")}</div>`;
@@ -657,7 +657,7 @@ const $ = (s, r = document) => r.querySelector(s),
 <div class="grid" style="margin-top:40px">${card(P[0], "c8", "16/10")}${card(P[1], "c4", "4/5")}${card(P[2], "c5", "1/1")}
 <div class="c7 rv"><span class="lab">04 · Film / Visual storytelling / Creative direction</span><h3 class="h2" style="margin-bottom:12px">CREATIVE MEDIA</h3><p class="mu">Selected work across cinematography, editing, direction and storytelling.</p><div class="thumbs">${film.map((p) => `<a href="#/work/${p.s}"><div class="im" style="aspect-ratio:4/3">${cov(p, "STILL")}</div><b style="margin-top:8px">${p.n.replace(" (An Unhelpful Guide)", "")}</b><small>${p.role}</small></a>`).join("")}</div></div></div>
 <p style="margin-top:40px"><a class="btn" href="#/work">ALL WORK →</a></p></div></section>
-<section style="background:var(--be)"><div class="wrap"><div class="rv"><span class="lab">Thinking</span><h2 class="h2">WHAT’S IN MY BAG.</h2><p class="mu" style="max-width:600px;margin-bottom:40px">A little bit of strategy, a lot of curiosity, and the skills to turn an idea into something people can actually see, hear and connect with.</p></div>${thinkHTML()}</div></section>
+<section style="background:var(--be)"><div class="wrap"><div class="rv"><span class="lab">Skills</span><h2 class="h2">WHAT’S IN MY BAG.</h2><p class="mu" style="max-width:600px;margin-bottom:40px">A mix of creative thinking, communication, hands-on media experience and a constant curiosity to understand what makes an idea work.</p></div>${thinkHTML()}</div></section>
 <section><div class="wrap cols"><div class="rv"><span class="lab">Currently exploring</span><h2 class="h2">CURRENTLY EXPLORING</h2><p class="serif" style="font-size:26px;color:var(--ac)">Still learning. Still experimenting. Still figuring out what makes people stop scrolling.</p></div><div class="rv">${words(["Marketing", "Brand Strategy", "Social Media", "Advertising", "Consumer Behaviour", "Content Strategy", "Creative Strategy"])}<p class="tiny" style="margin-top:20px">I like: stories, good branding, visual details, cities, conversations and ideas that stay with you.</p></div></div></section>
 <section style="padding-top:0"><div class="wrap cols"><div class="rv"><img src="${PORTRAIT}" alt="Portrait of Tiyasha Babu" loading="lazy" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;display:block"></div><div class="rv"><span class="lab">About</span><h2 class="h2">The person behind the work.</h2><p>Final-year B.Sc. Media Science student, specialising in Integrated Marketing Communication, with hands-on media, social and content experience.</p><a class="btn" href="#/about">MORE ABOUT ME →</a></div></div></section>${cta}`;
       V.work = (
@@ -699,7 +699,7 @@ ${p.cs.map((c, k) => `<div class="cs rv" id="s${k}"><div class="big">0${k + 1}</
               `<div class="cols rv" style="padding:30px 0;border-top:1px solid var(--ln)"><h3 style="font-size:32px">${k}</h3><div class="pills">${v.map((x) => `<span>${x}</span>`).join("")}</div></div>`,
           )
           .join("")}</div></section>`;
-      V.thinking = () => `<section><div class="wrap"><span class="lab">Thinking</span><h1 class="h2" style="font-size:clamp(44px,8vw,110px)">WHAT’S IN MY BAG.</h1><p class="mu" style="font-size: clamp(16px, 2vw, 24px); max-width: 800px; margin: 20px 0 40px">A little bit of strategy, a lot of curiosity, and the skills to turn an idea into something people can actually see, hear and connect with.</p><div>${thinkHTML()}</div></div></section>`;
+      V.thinking = () => `<section><div class="wrap"><span class="lab">Skills</span><h1 class="h2" style="font-size:clamp(44px,8vw,110px)">WHAT’S IN MY BAG.</h1><p class="mu" style="font-size: clamp(16px, 2vw, 24px); max-width: 800px; margin: 20px 0 40px">A mix of creative thinking, communication, hands-on media experience and a constant curiosity to understand what makes an idea work.</p><div>${thinkHTML()}</div></div></section>`;
       V.exp =
         () => `<section><div class="wrap"><span class="lab">Experiments</span><h1 class="h2" style="font-size:clamp(44px,8vw,110px)">IDEAS I MADE JUST BECAUSE I COULD.</h1><p class="mu">Speculative marketing projects. None are real client campaigns.</p>
 ${SPEC.map((x, i) => `<a class="card rv" href="#/experiments/${x.s}" style="border-top:1px solid var(--ln);padding:34px 0;display:block"><span class="bd">${x.tag}</span><h3>${x.n}</h3><p class="mu" style="margin-top:10px">${x.d}</p><span class="go" style="opacity:1">READ THE CONCEPT →</span></a>`).join("")}</div></section>`;
