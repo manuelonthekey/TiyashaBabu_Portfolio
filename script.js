@@ -240,8 +240,8 @@ const $ = (s, r = document) => r.querySelector(s),
               "I worked across both production and content contribution.\nMy work included:\n- Editing reels, podcasts, interviews and promotional videos\n- Creating content for Mirchi’s social media platforms\n- Working on client and sales videos\n- Assisting with indoor and outdoor shoots\n- Contributing captions, hooks and content ideas\n- Working on campaign-related content and launches\n- Creating and experimenting with AI-assisted content\n- Handling graphics, colour grading and audio\n- Adapting longer-form footage into shorter, platform-friendly content\nThe role gradually pushed me beyond editing into thinking about content itself — what to make, why it works and who it is meant for.",
             ],
             [
-              "The Execution",
-              "The work moved quickly and rarely looked the same from one day to the next.\nOne day could involve editing an interview into a reel; another could mean working on a client video, covering a shoot, developing an AI-assisted concept, or helping turn a campaign idea into social content.\nWorking across different formats taught me to adapt quickly without losing the purpose of the content.\n[INSERT REELS] · [INSERT EDITING SCREENSHOT]",
+              "Execution & Experience",
+              "My experience has been hands-on and varied, often moving from one kind of work to another.\nI’ve worked across interviews, podcasts, client videos, social media reels, shoots, AI-assisted content, graphics, audio and campaign-related work — taking ideas from an initial thought through to the final piece of content.\nWorking across different formats and fast-moving projects taught me how to adapt, collaborate and figure things out as I go, while keeping the bigger purpose of the work in mind.",
               "shots",
             ],
             [
@@ -299,7 +299,7 @@ const $ = (s, r = document) => r.querySelector(s),
             ],
             [
               "The Execution",
-              "The work moved between **strategy, words and visuals**.\nI developed the written world of the brand alongside its visual direction — from the tone of the website and product storytelling to editorial blog content, social concepts, campaign captions and visual references.\nThe aim was to make every touchpoint feel like it belonged to the **same brand world**, rather than treating each piece of content as a separate post.\n[INSERT BLOG LINK] · [INSERT MOODBOARD]",
+              "The work moved between **strategy, words and visuals**.\nI developed the written world of the brand alongside its visual direction — from the tone of the website and product storytelling to editorial blog content, social concepts, campaign captions and visual references.\nThe aim was to make every touchpoint feel like it belonged to the **same brand world**, rather than treating each piece of content as a separate post.",
               "shots",
             ],
             [
@@ -351,8 +351,8 @@ const $ = (s, r = document) => r.querySelector(s),
               "Assistant Head: social media, content planning, caption writing, creative design and event communication.",
             ],
             [
-              "The Execution",
-              "Club creatives, event photographs and the team. [INSERT CAPTIONS]",
+              "The Execution and Experience",
+              "Club creatives, event photographs and the team.",
               "shots",
             ],
             [
