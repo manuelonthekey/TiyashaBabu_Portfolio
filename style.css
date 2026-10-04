@@ -863,12 +863,11 @@
   position: absolute;
   top: 20%;
   left: 10%;
-  font-family: 'Amsterdam', cursive;
-  font-size: clamp(60px, 8vw, 130px);
-  font-weight: normal;
-  color: var(--tx);
-  -webkit-text-stroke: 1px var(--tx); /* Makes the font feel darker/heavier */
-  filter: contrast(1.5) brightness(0.8); /* Darkens the tone */
+  font-family: 'Amsterdam', 'Dancing Script', 'Caveat', cursive;
+  font-size: clamp(70px, 10vw, 140px); /* Slightly larger */
+  font-weight: bold;
+  color: #111111; /* Solid dark color */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); /* Subtle shadow for depth */
   transform: rotate(-4deg);
   z-index: 4;
 }
@@ -897,10 +896,10 @@
 
 .hero-portrait {
   position: absolute;
-  right: 5%;
-  bottom: 0;
+  right: 0;
+  bottom: -2%; /* Slightly drop it to allow zooming */
   z-index: 2;
-  height: 80vh;
+  height: 92vh; /* Increased from 80vh to zoom the image */
   display: flex;
   align-items: flex-end;
 }
@@ -909,7 +908,8 @@
   height: 100%;
   width: auto;
   object-fit: cover;
-  transform-origin: bottom center;
+  transform-origin: bottom right;
+  /* Optional: transform: scale(1.1); */
 }
 
 .hero-footer {
