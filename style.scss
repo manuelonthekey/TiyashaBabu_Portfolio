@@ -997,22 +997,27 @@
   }
   .hero-signature {
     top: 8%;
-    font-size: 10vw;
+    font-size: 18vw; /* Increased size significantly */
+    z-index: 4;
   }
   .hero-bg-text {
     font-size: 16vw;
+    z-index: 3; /* Placed directly on the portrait */
   }
   .hero-portrait {
     height: 50vh;
-    right: -10%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%); /* Centered */
   }
   .hero-buttons {
-    bottom: 20%;
+    bottom: 140px; /* Positioned directly above the footer text */
     left: 5%;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 10px;
     width: auto;
+    z-index: 5;
   }
   .hero-buttons .btn {
     width: auto;
