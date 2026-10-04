@@ -512,37 +512,25 @@ const $ = (s, r = document) => r.querySelector(s),
       ];
       const thinkHTML = () => `<div class="think">${TH.map((t, i) => `<div class="tc"><div><div class="n">0${i + 1}</div><h3>${t[0]}</h3></div><p style="font-size:15px; margin:0">${t[1]}</p></div>`).join("")}</div>`;
       const SK = {
-        Marketing: [
+        "Skills": [
+          "Creative Concepting",
           "Content Strategy",
-          "Digital Marketing",
-          "Brand Communication",
-          "Campaign Ideation",
-          "Audience Research",
-          "Trend Research",
-        ],
-        "Social Media": [
-          "Content Planning",
-          "Scheduling",
-          "Publishing",
-          "Engagement Monitoring",
-          "Caption Writing",
-          "Instagram Content",
-          "Reels",
-          "Trend/Meme Content",
-        ],
-        Creative: [
-          "Creative Ideation",
           "Copywriting",
-          "Scriptwriting",
-          "Visual Storytelling",
-          "Canva",
-          "Adobe Premiere Pro",
+          "Brand Communication",
+          "Social Media",
+          "Campaign Ideation",
+          "Creative Strategy",
+          "Storytelling",
+          "Visual Direction",
+          "Media Production",
         ],
-        "AI & Digital": [
-          "AI Prompting",
-          "Generative AI",
-          "AI Video",
-          "AI Image Creation",
+        "Softwares I Use": [
+          "Adobe Premiere Pro",
+          "Canva",
+          "InShot",
+          "VN",
+          "Instagram Edits",
+          "Instagram Insights",
         ],
       };
       const INT = [
