@@ -486,28 +486,31 @@ const $ = (s, r = document) => r.querySelector(s),
         film = P.slice(3);
       const TH = [
         [
-          "People first",
-          "Good content begins with understanding who you’re speaking to.",
-          "Before a caption or a cut, I ask who’s scrolling, what they care about, and what they’d never say out loud. The answer shapes everything.",
+          "Creative Thinking",
+          "Concepts, campaign ideas, creative directions and the occasional thought that starts with “what if…?”"
         ],
         [
-          "Ideas before decoration",
-          "A beautiful post without a reason is still just a beautiful post.",
-          "Polish matters, but a strong concept carries weak design further than great design carries a weak concept.",
+          "Content & Copy",
+          "Captions, scripts, brand stories and content that knows what it wants to say."
         ],
         [
-          "Platform matters",
-          "The same idea doesn’t have to look the same everywhere.",
-          "A reel, a caption and a poster each have their own pace. I adapt the idea instead of copy-pasting it.",
+          "Social Media",
+          "Content planning, platform thinking and ideas built for how people actually scroll, share and interact."
         ],
         [
-          "Make it feel something",
-          "The content people remember is rarely the content they simply saw.",
-          "Surprise, recognition, humour or a small ache: memorable content leaves a feeling behind.",
+          "Brand Communication",
+          "Finding the right voice, message and visual direction to make a brand feel like itself."
         ],
+        [
+          "Media & Production",
+          "Video editing, shoots, graphics, audio, colour and content production — hands-on experience from idea to execution."
+        ],
+        [
+          "Curiosity",
+          "Researching, experimenting, asking too many “why” questions and always looking for a better way to do things."
+        ]
       ];
-      const thinkHTML = () =>
-        `<div class="think">${TH.map((t, i) => `<button class="tc" aria-expanded="false"><div><div class="n">0${i + 1}</div><h3>${t[0]}</h3><p style="font-size:15px">${t[1]}</p></div><p class="ex">${t[2]}</p></button>`).join("")}</div>`;
+      const thinkHTML = () => `<div class="think">${TH.map((t, i) => `<div class="tc"><div><div class="n">0${i + 1}</div><h3>${t[0]}</h3></div><p style="font-size:15px; margin:0">${t[1]}</p></div>`).join("")}</div>`;
       const SK = {
         Marketing: [
           "Content Strategy",
@@ -561,7 +564,7 @@ const $ = (s, r = document) => r.querySelector(s),
       const words = (a) =>
         `<div class="words">${a.map((w, i) => `<span style="transition-delay:${i * 90}ms">${w}</span>`).join("")}</div>`;
       const card = (p, cl, ratio) =>
-        `<a class="card rv ${cl}" href="#/work/${p.s}"><div class="im" style="aspect-ratio:${ratio}">${cov(p, "IMAGE / VIDEO PREVIEW")}</div><div class="meta"><span>${p.lab}</span><span>${p.y}</span></div><h3>${p.n}</h3><p class="mu" style="margin-top:8px;font-size:15px">${p.d}</p><span class="go">${p.hover || "VIEW CASE STUDY →"}</span></a>`;
+        `<a class="card rv ${cl}" href="#/work/${p.s}"><div class="im" style="aspect-ratio:${ratio}">${cov(p, "IMAGE / VIDEO PREVIEW")}</div><div class="meta"><span>${p.lab}</span><span>${p.y}</span></div><h3>${p.n}</h3><p class="mu" style="margin-top:8px;font-size:15px">${p.d}</p><span class="go">${p.hover || "MY WORKS & EXPERIENCES →"}</span></a>`;
       const cta = `<section><div class="wrap rv"><h2 class="h2" style="font-size:clamp(48px,10vw,150px)">HAVE AN IDEA?</h2><p class="serif" style="font-size:clamp(24px,3vw,40px);color:var(--ac)">Let’s talk.</p><a class="btn p" href="#/contact" style="margin-top:20px">GET IN TOUCH ↗</a></div></section>`;
       const SPEC = [
         {
@@ -666,7 +669,7 @@ const $ = (s, r = document) => r.querySelector(s),
 <div class="grid" style="margin-top:40px">${card(P[0], "c8", "16/10")}${card(P[1], "c4", "4/5")}${card(P[2], "c5", "1/1")}
 <div class="c7 rv"><span class="lab">04 · Film / Visual storytelling / Creative direction</span><h3 class="h2" style="margin-bottom:12px">CREATIVE MEDIA</h3><p class="mu">Selected work across cinematography, editing, direction and storytelling.</p><div class="thumbs">${film.map((p) => `<a href="#/work/${p.s}"><div class="im" style="aspect-ratio:4/3">${cov(p, "STILL")}</div><b style="margin-top:8px">${p.n.replace(" (An Unhelpful Guide)", "")}</b><small>${p.role}</small></a>`).join("")}</div></div></div>
 <p style="margin-top:40px"><a class="btn" href="#/work">ALL WORK →</a></p></div></section>
-<section style="background:var(--be)"><div class="wrap"><div class="rv"><span class="lab">Thinking</span><h2 class="h2">HOW I THINK ABOUT CONTENT</h2></div>${thinkHTML()}</div></section>
+<section style="background:var(--be)"><div class="wrap"><div class="rv"><span class="lab">Thinking</span><h2 class="h2">WHAT’S IN MY BAG.</h2><p class="mu" style="max-width:600px;margin-bottom:40px">A little bit of strategy, a lot of curiosity, and the skills to turn an idea into something people can actually see, hear and connect with.</p></div>${thinkHTML()}</div></section>
 <section><div class="wrap cols"><div class="rv"><span class="lab">Currently exploring</span><h2 class="h2">CURRENTLY EXPLORING</h2><p class="serif" style="font-size:26px;color:var(--ac)">Still learning. Still experimenting. Still figuring out what makes people stop scrolling.</p></div><div class="rv">${words(["Marketing", "Brand Strategy", "Social Media", "Advertising", "Consumer Behaviour", "Content Strategy", "Creative Strategy"])}<p class="tiny" style="margin-top:20px">I like: stories, good branding, visual details, cities, conversations and ideas that stay with you.</p></div></div></section>
 <section style="padding-top:0"><div class="wrap cols"><div class="rv"><img src="${PORTRAIT}" alt="Portrait of Tiyasha Babu" loading="lazy" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;display:block"></div><div class="rv"><span class="lab">About</span><h2 class="h2">The person behind the work.</h2><p>Final-year B.Sc. Media Science student, specialising in Integrated Marketing Communication, with hands-on media, social and content experience.</p><a class="btn" href="#/about">MORE ABOUT ME →</a></div></div></section>${cta}`;
       V.work = (
@@ -682,7 +685,7 @@ const $ = (s, r = document) => r.querySelector(s),
       )
         .map(
           (p, i) =>
-            `<a href="#/work/${p.s}"><span class="mu">${p.y}</span><div><h3>${p.n}</h3><span class="mu" style="font-size:12px;letter-spacing:.1em">${p.lab}</span></div><div><div class="im" style="aspect-ratio:16/8;margin-bottom:12px">${cov(p, "VISUAL")}</div><p style="margin:0">${p.d}</p><small class="mu">Role: ${p.role} · <b style="color:var(--ac)">VIEW CASE STUDY →</b></small></div></a>`,
+            `<a href="#/work/${p.s}"><span class="mu">${p.y}</span><div><h3>${p.n}</h3><span class="mu" style="font-size:12px;letter-spacing:.1em">${p.lab}</span></div><div><div class="im" style="aspect-ratio:16/8;margin-bottom:12px">${cov(p, "VISUAL")}</div><p style="margin:0">${p.d}</p><small class="mu">Role: ${p.role} · <b style="color:var(--ac)">MY WORKS & EXPERIENCES →</b></small></div></a>`,
         )
         .join("")}</div></div></section>`;
       V.case = (s) => {
@@ -708,9 +711,7 @@ ${p.cs.map((c, k) => `<div class="cs rv" id="s${k}"><div class="big">0${k + 1}</
               `<div class="cols rv" style="padding:30px 0;border-top:1px solid var(--ln)"><h3 style="font-size:32px">${k}</h3><div class="pills">${v.map((x) => `<span>${x}</span>`).join("")}</div></div>`,
           )
           .join("")}</div></section>`;
-      V.thinking =
-        () => `<section><div class="wrap"><span class="lab">Thinking</span><h1 class="h2" style="font-size:clamp(44px,8vw,110px)">HOW I THINK ABOUT CONTENT</h1><p class="mu">Tools change. These four questions don’t. Hover, focus or tap a card.</p><div style="margin-top:40px">${thinkHTML()}</div>
-<div class="cols rv" style="margin-top:70px"><div><span class="lab">In practice</span><p>People first: Yuva Tourism Club posts were written for busy students, so details came first. Platform matters: Radio Mirchi audio was recut for reels, not just reposted. [ADD MORE EXAMPLES]</p></div><div><p>Feel something: Itréa’s copy starts from a memory, not a product spec.</p></div></div></div></section>`;
+      V.thinking = () => `<section><div class="wrap"><span class="lab">Thinking</span><h1 class="h2" style="font-size:clamp(44px,8vw,110px)">WHAT’S IN MY BAG.</h1><p class="mu" style="font-size: clamp(16px, 2vw, 24px); max-width: 800px; margin: 20px 0 40px">A little bit of strategy, a lot of curiosity, and the skills to turn an idea into something people can actually see, hear and connect with.</p><div>${thinkHTML()}</div></div></section>`;
       V.exp =
         () => `<section><div class="wrap"><span class="lab">Experiments</span><h1 class="h2" style="font-size:clamp(44px,8vw,110px)">IDEAS I MADE JUST BECAUSE I COULD.</h1><p class="mu">Speculative marketing projects. None are real client campaigns.</p>
 ${SPEC.map((x, i) => `<a class="card rv" href="#/experiments/${x.s}" style="border-top:1px solid var(--ln);padding:34px 0;display:block"><span class="bd">${x.tag}</span><h3>${x.n}</h3><p class="mu" style="margin-top:10px">${x.d}</p><span class="go" style="opacity:1">READ THE CONCEPT →</span></a>`).join("")}</div></section>`;
